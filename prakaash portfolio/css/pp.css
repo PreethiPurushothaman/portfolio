@@ -1,0 +1,91 @@
+body,html
+{
+    margin:0 auto;
+	padding:0 auto;
+	max-width: 100%; 
+	width:100%;
+	height:100%;
+}
+@font-face{
+	font-family:'perb';
+	src:url('../font/perpeta.ttf')format('truetype');
+}
+@font-face{
+	font-family:'tang';
+	src:url('../font/Tangerine_Regular.ttf')format('truetype');
+}
+
+.first_section {
+    background-color:black;
+	width:100%;
+	height:100%;
+	background-attachment:fixed;
+}
+.first_section img {
+    max-width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.first_section h1
+{
+	font-family:perb;
+	color:white;
+	width: 100%;
+	text-align: center;
+	font-size: 4em;
+	margin: 0 auto;
+	text-transform:capitalize;
+}
+.first_section h2
+{
+	font-family:tang;
+	width: 98%;
+	text-align: center;
+	font-size: 4em;
+	letter-spacing:3px;
+	color:#fff;
+	text-shadow: 2px 2px 5px white;
+}
+
+.down_arrow
+{
+	position:absolute;
+	top:90%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.down_arrow span
+{
+	display:block;
+	width:20px;
+	height:20px;
+	border-bottom:2px solid #fff;
+	border-right:2px solid #fff;
+	transform:rotate(45deg);
+	animation:animate 2s infinite;
+}
+.down_arrow span:nth-child(1)
+{
+	animation-delay:-0.2s;
+}
+.down_arrow span:nth-child(2)
+{
+	animation-delay:-0.4s;
+}
+@keyframes animate
+{
+	0%
+	{
+		opacity:0%;
+	}
+	50%
+	{
+		opacity:1;	
+	}
+	100%
+	{
+		opacity:0%;
+	}
+}
